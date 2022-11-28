@@ -1,0 +1,82 @@
+/* COMMON */
+body {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+img {
+  vertical-align: bottom;
+}
+
+/* HEADER */
+header {
+  background: #f9ffe9;
+  width: 100%;
+}
+header .wrapper {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+header .wrapper .logo > a {
+  position: absolute;
+  margin: 0;
+}
+header .main-menu {
+  position: absolute;
+  right: 0;
+  display: flex;
+}
+header .main-menu ul.menu {
+  display: flex;
+}
+header .main-menu ul.menu li {
+  position: relative;
+  display: flex;
+  padding-left: 45px;
+}
+header .main-menu ul.menu li a {
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+header .main-menu ul.menu li a:hover {
+  text-decoration: underline;
+}
+header .main-menu .search input {
+  width: 32px;
+  height: 32px;
+  padding: 4px 10px;
+  border: 0.2px solid #000;
+  box-sizing: border-box;
+  border-radius: 3px;
+  outline: none;
+  background-color: #fff;
+  color: #777;
+  margin-left: 10px;
+  transition: width 0.4s;
+}
+header .main-menu .search input:focus {
+  width: 190px;
+  border: 1.5px solid rgb(25, 0, 255);
+}
+header .main-menu .search .material-icons {
+  height: 28px;
+  position: absolute;
+  bottom: 0;
+  right: 4px;
+  margin: auto;
+  transition: 0.4s;
+}
+header .main-menu .search.focused .material-icons {
+  opacity: 0;
+}
